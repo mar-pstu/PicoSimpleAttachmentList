@@ -30,7 +30,7 @@ class PicoSimpleAttachmentList extends AbstractPicoPlugin {
 						'extension' => pathinfo( $file,  PATHINFO_EXTENSION ),
 						'url'       => $twigVariables[ 'config' ][ 'assets_url' ] . str_replace( $twigVariables[ 'config' ][ 'assets_dir' ], '', $file ),
 					];
-				}, glob( $twigVariables[ 'config' ][ 'assets_dir' ] . $assets_path . '/*.{doc,docx,odt,rtf,pdf,xlsx,xls,rar,zip,7z}', GLOB_BRACE ) );
+				}, glob( $twigVariables[ 'config' ][ 'assets_dir' ] . $assets_path . '/*.{doc,docx,odt,rtf,ppt,pptx,pdf,xlsx,xls,rar,zip,7z}', GLOB_BRACE ) );
 				$twigVariables[ 'files' ] = $files;
 			}
 		}
